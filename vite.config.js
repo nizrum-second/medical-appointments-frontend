@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), '');
 	const backendUrl =
-		env.VITE_API_URL || env.BACKEND_URL || "http://backend:8000";
+		env.VITE_API_URL || "https://medical-appointments-backend.vercel.app";
 
 	return {
 		plugins: [vue()],
